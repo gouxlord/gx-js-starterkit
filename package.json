@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gouxlord/gx-js-starterkit/issues"
   },
-  "homepage": "https://github.com/gouxlord/gx-js-starterkit#readme"
+  "homepage": "https://github.com/gouxlord/gx-js-starterkit#readme",
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  }
 }
