@@ -1,0 +1,19 @@
+{
+  "name": "gx-js-starterkit",
+  "version": "0.0.1",
+  "description": "JS front starter kit",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouxlord/gx-js-starterkit.git"
+  },
+  "author": "Pierre Goux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gouxlord/gx-js-starterkit/issues"
+  },
+  "homepage": "https://github.com/gouxlord/gx-js-starterkit#readme"
+}
