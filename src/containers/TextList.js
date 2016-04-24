@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import List from '../components/List';
+import List from '../ui/atoms/List';
 import { connect } from 'react-redux'
 
 

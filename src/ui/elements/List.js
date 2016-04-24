@@ -9,8 +9,8 @@ var List = React.createClass({
             <div>
                 <h3>List</h3>
                 <ul className='list'>
-                    {this.props.texts.map(text =>
-                        <li>{text.text}</li>
+                    {this.props.texts.map((text, index) =>
+                        <li key={index}>{text.text}</li>
                     )}
                 </ul>
             </div>

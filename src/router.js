@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
-import {syncHistoryWithStore, routerReducer} from 'react-router-redux';
-import MainLayout from './layouts/main-layout';
-import HomeView from './views/home-view';
+import MainLayout from './ui/layouts/main-layout';
+import HomeView from './ui/views/home-view';
+import Header from './ui/views/header-view';
 import appStore from './redux/index'
 
 ReactDOM.render((
@@ -13,6 +13,7 @@ ReactDOM.render((
         <Router  history={hashHistory}>
             <Route path="/" component={MainLayout}>
                 <IndexRoute component={HomeView}/>
+                <Route path="lol" component={Header}/>
             </Route>
         </Router>
     </Provider>

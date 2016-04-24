@@ -6,14 +6,9 @@ var Button = React.createClass({
         text: PropTypes.string,
         clickFn: PropTypes.func
     },
-    getDefaultProps: function() {
-        return {
-            text: 'Ok'
-        };
-    },
     render: function(){
         return (
-            <button onClick={this.props.clickFn}> {this.props.text}</button>
+            <button onClick={this.props.clickButton}> {this.props.text}</button>
         )
     }
 });
