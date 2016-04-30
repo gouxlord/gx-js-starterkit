@@ -14,7 +14,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(updateCurrentText(e.target.value))
         },
         onSubmit: function(e){
-            e.preventDefault
+            e.preventDefault();
         },
         clickButton: (e) => {
             e.preventDefault();
