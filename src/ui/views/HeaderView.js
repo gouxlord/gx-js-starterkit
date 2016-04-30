@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react';
 
-var HomeView = React.createClass({
+var HeaderView = React.createClass({
     render () {
         return (
             <div className='header'>
-                lol
+                header
             </div>
         )
     }
 });
 
-export default HomeView;
+export default HeaderView;

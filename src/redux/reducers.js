@@ -15,7 +15,8 @@ function appStore(state = initialState, action) {
                     {
                         text: state.currentText
                     }
-                ]
+                ],
+                currentText: ''
             });
         case UPDATE_CURRENT_TEXT:
             return Object.assign({}, state, {

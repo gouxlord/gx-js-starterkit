@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import Header from '../views/header-view';
+import Header from '../views/HeaderView';
 
 var MainLayout = React.createClass({
     render: function(){
