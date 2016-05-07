@@ -1,17 +1,15 @@
 var webpack = require('webpack');
 var path = require('path');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-require('babel-plugin-transform-object-assign');
 
 var config = {
     entry: [
         './src/router.js'
     ],
-
     output: {
-        path: path.join(__dirname, '../dist'),
+        path: path.join(__dirname, '../build'),
         filename: 'bundle.js',
-        publicPath: '/dist/'
+        publicPath: '/build/'
     },
     module: {
         loaders: [
@@ -30,10 +28,13 @@ var config = {
     plugins: [
         new CopyWebpackPlugin([
             { from: 'src/static'}
-        ])
+        ]),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        })
     ]
 };
 
-// Export such that calling require(./webpack.config.js)
-// will return the config object.
 module.exports = config;
