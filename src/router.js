@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import {createStore} from 'redux';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import MainLayout from './ui/layouts/MainLayout';
 import HomeView from './ui/views/HomeView';
 import SecondaryView from './ui/views/SecondaryView';
 import appStore from './redux/index'
+import styles from 'normalize.css/normalize.css'
 
 ReactDOM.render((
     <Provider store={appStore}>
