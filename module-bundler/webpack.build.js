@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 var path = require('path');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+
+var baseLoaders = require('./webpack.base.loaders');
+var basePlugins = require('./webpack.base.plugins');
 
 var config = {
     entry: [
@@ -13,27 +15,16 @@ var config = {
     },
     module: {
         loaders: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                loader: 'babel',
-                query: {
-                    cacheDirectory: true,
-                    plugins: ['transform-runtime'],
-                    presets: ['es2015', 'react', 'stage-0']
-                }
-            }
+            ...baseLoaders
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([
-            { from: 'src/static'}
-        ]),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
             }
-        })
+        }),
+        ...basePlugins
     ]
 };
 
