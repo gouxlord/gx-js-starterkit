@@ -3,6 +3,7 @@ var path = require('path');
 
 var baseLoaders = require('./webpack.base.loaders');
 var basePlugins = require('./webpack.base.plugins');
+var baseResolve = require('./webpack.base.resolve');
 
 var config = {
     entry: [
@@ -13,6 +14,7 @@ var config = {
         filename: 'bundle.js',
         publicPath: '/dist/'
     },
+    resolve: baseResolve,
     module: {
         loaders: [
             ...baseLoaders
