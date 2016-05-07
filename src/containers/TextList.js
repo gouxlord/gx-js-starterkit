@@ -1,4 +1,3 @@
-import React, { PropTypes } from 'react';
 import List from '../ui/elements/List';
 import { connect } from 'react-redux'
 

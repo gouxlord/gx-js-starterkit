@@ -6,7 +6,8 @@ import MainLayout from './ui/layouts/MainLayout';
 import HomeView from './ui/views/HomeView';
 import SecondaryView from './ui/views/SecondaryView';
 import appStore from './redux/index'
-import styles from 'normalize.css/normalize.css'
+import 'normalize.css/normalize.css'
+import 'src/ui/css/base.css'
 
 ReactDOM.render((
     <Provider store={appStore}>

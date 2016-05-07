@@ -1,10 +1,9 @@
-import { combineReducers } from 'redux';
 import { ADD_TEXT, UPDATE_CURRENT_TEXT} from './actions';
 
 const initialState = {
     texts: [],
-    currentText: ""
-}
+    currentText: ''
+};
 
 function appStore(state = initialState, action) {
     switch (action.type) {

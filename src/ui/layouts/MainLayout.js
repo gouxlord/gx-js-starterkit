@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router'
 import Header from '../views/HeaderView';
 
 var MainLayout = React.createClass({
     render: function(){
         return (
-            <div className='page-container'>
+            <div>
                 <Header/>
-                <div className='view-container'>
+                <div>
                     { this.props.children }
                 </div>
             </div>

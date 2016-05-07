@@ -1,9 +1,9 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 var SecondaryView = React.createClass({
     render () {
         return (
-            <div className='secondaryView'>
+            <div className="secondaryView">
                 An other view
             </div>
         )
