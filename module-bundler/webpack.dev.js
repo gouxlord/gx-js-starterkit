@@ -1,4 +1,3 @@
-var webpack = require('webpack');
 var path = require('path');
 
 var baseLoaders = require('./webpack.base.loaders');
@@ -16,13 +15,22 @@ var config = {
     },
     resolve: baseResolve,
     module: {
+        preLoaders: [
+            {
+                test: /\.(js|jsx)$/,
+                loaders: ['eslint']
+            }
+        ],
         loaders: [
             ...baseLoaders
         ]
     },
     plugins: [
         ...basePlugins
-    ]
+    ],
+    eslint: {
+        configFile: path.join(__dirname, '..', '.eslintrc')
+    }
 };
 
 // Export such that calling require(./webpack.config.js)
