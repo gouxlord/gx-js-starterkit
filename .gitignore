@@ -1,3 +1,4 @@
 #IDE specific
 .idea
 node_modules
+npm-debug.log
