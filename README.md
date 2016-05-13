@@ -1,7 +1,6 @@
 # gx-js-starterkit
 
-#### Atomic design and Smart/Dumb components mixed
-[Cf atomic design](http://bradfrost.com/blog/post/atomic-web-design/)
+#### Structure
 
 ```
 -- src
