@@ -1,6 +1,6 @@
 import React from 'react';
-import AddTextForm from '../../containers/AddTextForm';
-import TextList from '../../containers/TextList';
+import AddTextForm from 'src/containers/AddTextForm';
+import TextList from 'src/containers/TextList';
 
 var HomeView = React.createClass({
     render () {

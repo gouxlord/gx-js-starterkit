@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 //View
-import MainLayout from './ui/layouts/MainLayout';
-import HomeView from './ui/views/HomeView';
-import SecondaryView from './ui/views/SecondaryView';
+import MainLayout from 'src/ui/layouts/MainLayout';
+import HomeView from 'src/ui/views/HomeView';
+import SecondaryView from 'src/ui/views/SecondaryView';
 //State
-import appStore from './application-state/index'
+import appStore from 'src/application-state/index'
 //Css
 import 'normalize.css/normalize.css'
 import 'src/ui/css/base.scss'

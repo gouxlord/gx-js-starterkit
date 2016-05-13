@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../views/HeaderView';
+import Header from 'src/ui/views/HeaderView';
 
 var MainLayout = React.createClass({
     render: function(){

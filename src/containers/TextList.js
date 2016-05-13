@@ -1,6 +1,5 @@
-import List from '../ui/elements/List';
 import { connect } from 'react-redux'
-
+import List from 'src/ui/elements/List';
 
 const mapStateToProps = (state) => {
     return {

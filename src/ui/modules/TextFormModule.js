@@ -1,6 +1,6 @@
 import React from 'react'
-import AddTextButton from '../elements/Button';
-import TextInputText from '../elements/InputText';
+import AddTextButton from 'src/ui/elements/Button';
+import TextInputText from 'src/ui/elements/InputText';
 
 var Form = React.createClass({
     render: function(){
