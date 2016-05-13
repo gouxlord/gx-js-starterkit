@@ -1,0 +1,13 @@
+@value backgroundPrimary from 'src/ui/css/variables.scss';
+@value backgroundPrimaryTextColor from 'src/ui/css/variables.scss';
+
+.wrapper {
+    background-color: backgroundPrimary;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+.title {
+    color: backgroundPrimaryTextColor;
+    padding: 0px;
+}
