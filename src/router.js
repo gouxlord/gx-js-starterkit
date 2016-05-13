@@ -13,6 +13,11 @@ import appStore from 'src/application-state/index'
 import 'normalize.css/normalize.css'
 import 'src/ui/css/base.scss'
 
+//Cool feature, webpack output if(true) or if(false)
+if(process.env.NODE_ENV === 'dev'){
+    console.warn('Dev mode enabled')
+}
+
 ReactDOM.render((
     <Provider store={appStore}>
         <Router  history={hashHistory}>

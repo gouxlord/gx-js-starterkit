@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var path = require('path');
 
 var baseLoaders = require('./webpack.base.loaders');
@@ -26,6 +27,11 @@ var config = {
         ]
     },
     plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('dev')
+            }
+        }),
         ...basePlugins
     ],
     eslint: {
