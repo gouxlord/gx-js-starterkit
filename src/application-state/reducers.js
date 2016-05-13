@@ -5,7 +5,7 @@ const initialState = {
     currentText: ''
 };
 
-function appStore(state = initialState, action) {
+function reducers(state = initialState, action) {
     switch (action.type) {
         case ADD_TEXT:
             return Object.assign({}, state, {
@@ -25,4 +25,4 @@ function appStore(state = initialState, action) {
             return state
     }
 }
-export default appStore;
+export default reducers;

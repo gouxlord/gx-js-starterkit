@@ -10,7 +10,7 @@ import SecondaryView from 'src/ui/views/SecondaryView';
 //State
 import appStore from 'src/application-state/index'
 //Css
-import 'normalize.css/normalize.css'
+import 'normalize-css/normalize.css'
 import 'src/ui/css/base.scss'
 
 //Cool feature, webpack output if(true) or if(false)
