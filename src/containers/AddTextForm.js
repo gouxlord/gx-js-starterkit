@@ -1,6 +1,6 @@
 import Form from '../ui/modules/TextFormModule'
 import { connect } from 'react-redux'
-import { updateCurrentText, addText } from '../redux/actions'
+import { updateCurrentText, addText } from '../application-state/actions'
 
 const mapStateToProps = (state) => {
     return {

@@ -8,7 +8,7 @@ import MainLayout from './ui/layouts/MainLayout';
 import HomeView from './ui/views/HomeView';
 import SecondaryView from './ui/views/SecondaryView';
 //State
-import appStore from './redux/index'
+import appStore from './application-state/index'
 //Css
 import 'normalize.css/normalize.css'
 import 'src/ui/css/base.scss'
