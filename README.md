@@ -1,15 +1,33 @@
 # gx-js-starterkit
 
+#### Content
+
+- React
+- Redux
+- React-router
+- SASS ready
+- Redux dev tools
+
 #### Structure
 
 ```
+-- module-bundler           -> contain module bundler config
 -- src
----- containers -> Glue application states with views, use molecules or atoms to return smart component
----- redux -> Contain all redux logic
----- static -> Static sources
----- ui -> Contain all the dumb components, atomic design way
------- elements -> very simple components, like button or list, they are atoms
------- layouts -> higher html organisation, contain views, they are templates
------- modules -> modules are elements compositions, they are molecules
------- views -> sub-layouts, contain organism, elements or containers, they are organisms
+------ application-state    -> Contain all state logic (redux)
+------ containers           -> Data binder (smart component)
+------ dev-tools            -> Dev specific tools
+------ static               -> Static sources
+------ ui                   -> Contain all the dumb components and css. Only UI state logic should be handled here
+---------- css              -> css library (components css are in same folder with same name)
+---------- elements         -> very simple components (eg: button, list element)
+---------- layouts          -> highest html organisation, contain views
+---------- modules          -> elements composition (eg: form, list).
+---------- views            -> sub-layouts (eg: header, footer)
 ```
+
+
+#### TODO
+
+- [ ] Add test libs
+- [ ] Add bottle.js (service container)
+- [ ] API communication boilerplate
