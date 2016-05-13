@@ -1,4 +1,4 @@
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = [
     {
@@ -12,7 +12,15 @@ module.exports = [
         }
     },
     {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&importLoaders=1!autoprefixer-loader")
+        test: /\.(scss|css)$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1!autoprefixer-loader!sass-loader')
+    },
+    {
+        test: /\.(jpg|png)$/,
+        loader: 'file-loader'
+    },
+    {
+        test: /\.json$/,
+        loader: 'json-loader'
     }
 ];
