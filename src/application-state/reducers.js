@@ -1,4 +1,4 @@
-import { ADD_TEXT, UPDATE_CURRENT_TEXT} from './actions';
+import { ADD_TEXT, UPDATE_CURRENT_TEXT, SET_CONFIG} from './actions';
 
 const initialState = {
     texts: [],
@@ -7,6 +7,11 @@ const initialState = {
 
 function reducers(state = initialState, action) {
     switch (action.type) {
+        case SET_CONFIG:
+            console.log(action.config)
+            return Object.assign({}, state, {
+                config: action.config
+            });
         case ADD_TEXT:
             return Object.assign({}, state, {
                 texts: [

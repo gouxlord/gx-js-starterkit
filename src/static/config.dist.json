@@ -1,0 +1,5 @@
+{
+  "api": {
+    "mailUrl": "http://localhost:3000/sendContactForm"
+  }
+}
