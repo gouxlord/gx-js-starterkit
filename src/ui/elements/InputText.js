@@ -7,7 +7,7 @@ var InputText = React.createClass({
     },
     render: function(){
         return (
-            <input type="text" value={this.props.currentText} onChange={this.props.change} placeholder={this.props.placeholder}/>
+            <input type="text"  onChange={this.props.change} placeholder={this.props.placeholder}/>
         )
     }
 });

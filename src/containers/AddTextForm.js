@@ -1,31 +1,18 @@
-import { connect } from 'react-redux'
-import { updateCurrentText, addText } from 'src/application-state/actions'
+import { addText } from 'src/application-state/actions'
 import Form from 'src/ui/modules/TextFormModule'
+import { reduxForm } from 'redux-form'
+import store from 'src/application-state/index'
+import { Promise } from 'es6-promise';
 
-const mapStateToProps = (state) => {
-    return {
-        currentText: state.currentText
+const fields = [ 'text' ];
+
+
+export default reduxForm({
+    form: 'textForm',
+    fields,
+    onSubmit: (values) => {
+        return new Promise((resolve, reject) => {
+            store.dispatch(addText(values, resolve, reject));
+        });
     }
-};
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        change : function(e){
-            dispatch(updateCurrentText(e.target.value))
-        },
-        onSubmit: function(e){
-            e.preventDefault();
-        },
-        clickButton: (e) => {
-            e.preventDefault();
-            dispatch(addText())
-        }
-    }
-};
-
-const AddTextForm = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Form);
-
-export default AddTextForm;
+})(Form)

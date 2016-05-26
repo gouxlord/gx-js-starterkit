@@ -3,7 +3,7 @@ import List from 'src/ui/elements/List';
 
 const mapStateToProps = (state) => {
     return {
-        texts: state.texts
+        texts: state.text.texts
     }
 };
 
