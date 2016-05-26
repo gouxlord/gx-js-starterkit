@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 
 class Form extends Component {
     render() {
@@ -20,11 +20,5 @@ class Form extends Component {
         )
     }
 }
-
-Form.propTypes = {
-    fields: PropTypes.object.isRequired,
-    handleSubmit: PropTypes.func.isRequired,
-    submitting: PropTypes.bool.isRequired
-};
 
 export default Form;
